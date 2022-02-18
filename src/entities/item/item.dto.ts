@@ -30,3 +30,9 @@ export class UpdateItemDTO {
   @IsString()
   isDone: string;
 }
+
+export class DeleteItemDTO {
+  @IsString()
+  @IsNotEmpty()
+  deletePassword: string;
+}
